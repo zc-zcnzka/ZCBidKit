@@ -165,7 +165,7 @@ jobs:
 
       - name: Build Windows MSI artifact
         if: runner.os == 'Windows'
-        run: npx electron-builder --win msi --publish never -c.productName=OpenBidKit_Yibiao -c.extraMetadata.author=mark -c.copyright="Copyright (c) 2026 mark"
+        run: npx electron-builder --win msi --publish never -c.productName=ZCBidKit -c.extraMetadata.author=mark -c.copyright="Copyright (c) 2026 mark"
 
       - name: Build and publish macOS artifacts
         if: runner.os == 'macOS'
@@ -204,13 +204,13 @@ jobs:
           使用步骤：
 
           1. 双击 dmg 文件。
-          2. 将“易标投标工具箱.app”拖到“应用程序”文件夹。
+          2. 将“ZC投标工具箱.app”拖到“应用程序”文件夹。
           3. 打开“终端”App。
           4. 执行下面命令：
 
-          xattr -dr com.apple.quarantine /Applications/易标投标工具箱.app
+          xattr -dr com.apple.quarantine /Applications/ZC投标工具箱.app
 
-          5. 再从“应用程序”中打开“易标投标工具箱”。
+          5. 再从“应用程序”中打开“ZC投标工具箱”。
 
           如果仍无法打开，请右键点击 App，选择“打开”，再确认打开。
           EOF
